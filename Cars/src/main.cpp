@@ -16,7 +16,9 @@ int main(int argc, char *argv[]) {
 
         getline(std::cin, acao);
 
-        if (acao == "virar chave")
+        if (acao == "status")
+            mostrarStatus(meuCarro);
+        else if (acao == "virar chave")
             meuCarro.viraChave();
         else if (acao == "acelerar")
             meuCarro.acelera();

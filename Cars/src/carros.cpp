@@ -2,7 +2,7 @@
 
 #include <iostream>
 
-Carro::Carro() : estado("desligado"), tanque(60), velocidade(0) {
+Carro::Carro() : estado("desligado"), tanque(60), velocidade(0), marcha(0) {
 
 }
 

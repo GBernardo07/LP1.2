@@ -1,7 +1,9 @@
-#ifndef conta_HPP
-#define conta_HPP
+#ifndef CONTA_HPP
+#define CONTA_HPP
 
 #include <string>
+#include "agencia.hpp"
+#include "cliente.hpp"
 
 class Conta {
 
@@ -9,7 +11,7 @@ class Conta {
 
     int numero;
     double saldo;
-    std::string titular;
+    Cliente titular;
 
     void saca(double valor);
     void deposita(double valor);
