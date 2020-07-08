@@ -8,10 +8,15 @@
 class Conta {
 
     public:
+    
+    Conta();
+    Conta(Cliente &titular);
+    ~Conta();
 
     int numero;
     double saldo;
     Cliente titular;
+    static int qntdContas;
 
     void saca(double valor);
     void deposita(double valor);

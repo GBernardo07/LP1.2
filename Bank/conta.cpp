@@ -2,6 +2,23 @@
 
 #include <iostream>
 
+Conta::Conta() {
+
+    this->qntdContas += 1;
+}
+
+Conta::Conta(Cliente &titular) : titular(titular){
+
+    this->qntdContas += 1;
+}
+
+Conta::~Conta() {
+
+
+}
+
+int Conta::qntdContas{0};
+
 void Conta::saca(double valor) {
 
     this->saldo -= valor;

@@ -7,6 +7,10 @@ class Cliente {
 
     public:
 
+    Cliente();
+    ~Cliente();
+
+    static int qntdClientes;
     std::string nome;
     std::string cpf;
 
