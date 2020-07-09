@@ -11,7 +11,9 @@ class Carro {
     std::string estado; // ligado/desligado
 
     Carro();
-    //~Carro();
+    ~Carro();
+
+    static int qntdCarros;
 
     int estaLigado();
     void viraChave();

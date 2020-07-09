@@ -4,7 +4,16 @@
 
 Carro::Carro() : estado("desligado"), tanque(60), velocidade(0), marcha(0) {
 
+    this->qntdCarros += 1;
+
 }
+
+Carro::~Carro() {
+
+    
+}
+
+int Carro::qntdCarros {0};
 
 int Carro::estaLigado() {
 
