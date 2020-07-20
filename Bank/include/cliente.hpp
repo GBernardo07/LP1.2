@@ -9,8 +9,6 @@ class Cliente {
 
     static int qntdClientes;
 
-    protected:
-
     std::string nome, dataContrato, endereco;
 
     public:

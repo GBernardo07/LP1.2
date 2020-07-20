@@ -16,7 +16,6 @@ class ClientePF : public Cliente {
     ClientePF();
     ~ClientePF();
 
-
     void setCPF(std::string cpf);
     std::string getCPF();
     void setIdade(int idade);
