@@ -3,7 +3,9 @@
 
 #include <string>
 
-class ClientePJ {
+#include "cliente.hpp"
+
+class ClientePJ: public Cliente {
 
     private:
     

@@ -3,6 +3,7 @@
 #include "../include/conta.hpp"
 #include "../include/cliente.hpp"
 #include "../include/clientepj.hpp"
+#include "../include/clientepf.hpp"
 #include "../include/fila.hpp"
 
 int main(int argc, char* argv[]) {
@@ -10,19 +11,18 @@ int main(int argc, char* argv[]) {
     Conta a, b;
     Fila <Conta> fileira(5);
 
-    a.titular.nome = "Gabriel";
-    b.titular.nome = "Bernardo";
+    a.getTitular().setNome("Gabriel");
+    b.getTitular().setNome("Bernardo");
 
-    a.numero = 1004;
-    a.saldo = 250;
-
-    b.numero = 1003;
-    b.saldo = 350;
+    a.setNumero(1004);
+    a.setSaldo(250);
+    b.setNumero(1003);
+    b.setSaldo(350);
 
     fileira.push(a);
     fileira.push(b);
 
-    std::cout << fileira.back().numero << std::endl;
+    std::cout << fileira.back().getNumero() << std::endl;
     
 
     return 0;

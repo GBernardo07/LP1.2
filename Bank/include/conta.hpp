@@ -7,16 +7,26 @@
 
 class Conta {
 
+    private:
+    
+    int numero;
+    double saldo;
+    Cliente titular;
+
+    static int qntdContas;
+
     public:
     
     Conta();
     Conta(Cliente &titular);
     ~Conta();
 
-    int numero;
-    double saldo;
-    Cliente titular;
-    static int qntdContas;
+    void setNumero(int numero);
+    int getNumero();
+    void setSaldo(double saldo);
+    double getSaldo();
+    void setTitular(Cliente titular);
+    Cliente getTitular();
 
     void saca(double valor);
     void deposita(double valor);

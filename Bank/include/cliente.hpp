@@ -5,14 +5,25 @@
 
 class Cliente {
 
+    private:
+
+    static int qntdClientes;
+
+    protected:
+
+    std::string nome, dataContrato, endereco;
+
     public:
 
     Cliente();
     ~Cliente();
 
-    static int qntdClientes;
-    std::string nome;
-    std::string cpf;
+    void setNome(std::string nome);
+    std::string getNome();
+    void setDataContrato(std::string data);
+    std::string getDataContrato();
+    void setEndereco(std::string endereco);
+    std::string getEndereco();
 
 };
 

@@ -19,6 +19,36 @@ Conta::~Conta() {
 
 int Conta::qntdContas{0};
 
+void Conta::setNumero(int numero) {
+
+    this->numero = numero;
+}
+
+int Conta::getNumero() {
+
+    return this->numero;
+}
+
+void Conta::setSaldo(double saldo) {
+
+    this->saldo = saldo;
+}
+
+double Conta::getSaldo() {
+
+    return this->saldo;
+}
+
+void Conta::setTitular(Cliente titular) {
+
+    this->titular = titular;
+}
+
+Cliente Conta::getTitular() {
+
+    return this->titular;
+}
+
 void Conta::saca(double valor) {
 
     this->saldo -= valor;
